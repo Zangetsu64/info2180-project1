@@ -1,11 +1,179 @@
 /* Add your CSS to this file */
+header {
+    font-size: 18px;
+    background-color: white;
+    padding: 70px;
+}
+header h1{
+    font-size: 18px;
+    float: left;
+}
+
+.header.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul {
+    float: right;
+    list-style-type: none;
+}
+
+nav{
+    display: inline;
+    text-align: right;
+}
+nav li{
+    display: inline-block;
+    font-size: 18px;
+    padding: 20px;
+}
+li a:link{
+    color: #6b7280;
+    text-decoration: none;
+}
+li a:hover{
+    color: #5a67d8;
+}
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    border: 2px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000;
+}
+.card-body {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.overview-hero{
+    background-color: #E2E8F0;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.overview-hero-text{
+    text-align: right;
+}
+
+.overview-hero .container img{
+    height: 150px;
+    width: 150px;
+    float: left;
+}
+
+.learn-about .container{
+    border-color: #E2E8F0;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.learn-about h2{
+    color: #48bb78;
+    font-size: 24px;
+}
+.learn-about .card-body h3{
+    color: #48bb78;
+    font-size: 21px;
+}
+
+.testing {
+    background-color: #4A5568;
+    padding: 60px;
+    display: grid;
+    color: white;
+}
+.testing .container {
+    grid-template-columns: 2fr 1fr;
+}
+.testing .cta a{
+    float: right;
+    background-color: #48bb78;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.testing .testing-description p {
+    text-align: left;
+    max-width: 550px;
+}
+
+article{
+    display: inline-flex;
+    align-content: right;
+}
+
+.stories img{
+    padding: 20px;
+    border-radius: 50%;
+    float: left;
+    height: 250px;
+    width: 250px;
+}
+.stories h2{
+    color: #48bb78;
+}
+.stories .container .article-body p a{
+    color: #5a67d8;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.newsletter {
+    color: white;
+    background-color: #48bb78;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    align-content: center;
+}
+.newsletter p{
+    align-content: center;
+}
+
+.newsletter button{
+    background-color: #5a67d8;
+    color: white;
+    padding: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.form-group{
+    display: contents;
+    align-self: center;
+}
+footer{
+    background-color: #4A5568;
+    color: white;
+    padding: 20px;
 }
